@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-night: #0b0b10;
+  --color-panel: #131318;
+  --color-field: #18181f;
+  --color-edge: rgb(255 255 255 / 0.07);
+  --color-violet: #6c5cff;
+  --color-violet-soft: #8b7dff;
+  --color-ok: #22c58b;
+  --color-bad: #ff5a6a;
+  --color-dim: #8a8a99;
+}
+
+html, body, #root { min-height: 100%; }
+body { @apply bg-night text-white font-sans antialiased; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition-duration: 1ms !important; } }
